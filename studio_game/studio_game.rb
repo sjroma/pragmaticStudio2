@@ -1,19 +1,22 @@
 player1 = "larry"
-health1 = 60
-# use a single quoted string to print the player and his health
-puts player1 + '\'s health is ' + health1.to_s
-# use a double quoted string to print the player and his health
-puts "#{player1}'s health is #{health1}"
-# change the double quoted string to triple the players health
-puts "#{player1}'s health is #{health1 * 3}"
-# divide larry's health by 9.  Print answer with decimals (float) and without (integer)
-puts "#{player1}'s health is #{health1 / 9.0}"
-puts "#{player1}'s health is #{health1 / 9}"
-
-puts
-puts "Players: \n\tlarry\n\tcurly\n\tmoe"
-
-player1 = "larry"
 player2 = "curly"
 player3 = "moe"
-puts "Players: \n\t#{player1}\n\t#{player2}\n\t#{player3}"
+player4 = "shemp"
+health1 = 60
+health2 = 125
+health3 = 100
+health4 = 90
+
+puts "#{player1.capitalize} has a health of #{health1}."
+puts "#{player2.upcase} has a health of #{health2}."
+health2 = health1
+puts "#{player2.upcase} has a health of #{health2}."
+health1 = 30
+puts "#{player1.capitalize} has a health of #{health1}."
+puts "#{player2.upcase} has a health of #{health2}."
+text = "#{player3.capitalize} has a health of #{health3}."
+puts text.center(50, '*')
+puts "#{player3.capitalize} has a health of #{health3}.".center(50, '*')
+formatted_name = player4.capitalize.ljust(20, '.')
+puts "#{formatted_name} #{health4} health"
+puts "#{player4.capitalize.ljust(20, '.')} #{health4} health"
