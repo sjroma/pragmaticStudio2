@@ -20,3 +20,9 @@ puts "#{player3.capitalize} has a health of #{health3}.".center(50, '*')
 formatted_name = player4.capitalize.ljust(20, '.')
 puts "#{formatted_name} #{health4} health"
 puts "#{player4.capitalize.ljust(20, '.')} #{health4} health"
+
+puts
+current_time = Time.new
+formatted_time = current_time.strftime("%A %m/%d/%Y at %H:%M%p")
+puts "The game started on #{formatted_time}"
+puts current_time.strftime("The game started on %A %m/%d/%Y at %H:%M%p")
